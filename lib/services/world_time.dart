@@ -28,6 +28,7 @@ class WorldTime {
       now = now.add(Duration(hours: int.parse(offset)));
 
       // set the time property
+      print(Intl.defaultLocale);
       time = DateFormat.jm().format(now);
     }catch(e) {
       print('Caught error: $e');
