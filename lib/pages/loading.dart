@@ -16,7 +16,8 @@ class _LoadingState extends State<Loading> {
     Navigator.pushReplacementNamed(context, '/home', arguments: {
       'location': wt.location,
       'flag': wt.flag,
-      'time': wt.time
+      'time': wt.time,
+      'isDaytime': wt.isDaytime
     });
   }
   @override
