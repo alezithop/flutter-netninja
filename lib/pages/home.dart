@@ -16,7 +16,7 @@ class _HomeState extends State<Home> {
     print(data);
 
     // set background
-    String bgImage = data['isDaytime'] ? 'day.jpeg' : 'night.jpeg';
+    String bgImage = data['isDaytime'] ? 'day.png' : 'night.png';
 
     Color bgColor = data['isDaytime'] ? Colors.blue : Colors.indigo[700];
 
@@ -40,13 +40,13 @@ class _HomeState extends State<Home> {
                     },
                     icon: Icon(
                         Icons.location_on,
-                        color: Colors.grey ,
+                        color: Colors.white,
                     ),
                     label: Text(
                       'Edit Location',
                       style: TextStyle(
                         letterSpacing: 2.0,
-                        color: Colors.grey[600],
+                        color: Colors.white,
                       ),
                     ),
                 ),
@@ -59,7 +59,7 @@ class _HomeState extends State<Home> {
                       style: TextStyle(
                         fontSize: 28.0,
                         letterSpacing: 2.0,
-                        color: Colors.grey[600],
+                        color: Colors.white,
                       ),
                     ),
                   ],
@@ -69,7 +69,7 @@ class _HomeState extends State<Home> {
                   data['time'],
                   style: TextStyle(
                     fontSize: 66.0,
-                    color: Colors.grey[600],
+                    color: Colors.white,
                   ),
                 ),
               ],
